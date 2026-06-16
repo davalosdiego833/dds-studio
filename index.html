@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dávalos Digital Studio | Software a la Medida</title>
+    <meta name="description" content="Diseño premium y desarrollo de software a la medida. Hacemos realidad tus proyectos digitales.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Translucent Header (Logo image, no text) -->
+    <header id="global-header">
+        <nav class="nav-container">
+            <a href="#" class="logo-link">
+                <img src="logo_transparent.png" alt="DDS" id="nav-logo">
+            </a>
+            <div class="nav-links">
+                <a href="#hero-scene">Inicio</a>
+                <a href="#purpose-section">Propósito</a>
+                <a href="#showcase-section">Proyectos</a>
+                <a href="#packages-section">Paquetes</a>
+                <a href="#contact-section" class="nav-cta">Consultar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SCENE 1: HERO — Big logo centered, fades on scroll -->
+        <section id="hero-scene">
+            <div class="hero-sticky">
+                <div class="hero-glow"></div>
+                <div id="hero-logo-wrap">
+                    <img src="logo_transparent.png" alt="Dávalos Digital Studio" id="hero-logo">
+                    <div class="hero-tagline">
+                        <span class="tagline-line"></span>
+                        <p>Software & Design Studio</p>
+                        <span class="tagline-line"></span>
+                    </div>
+                    <p class="scroll-hint">Desliza para descubrir <i data-lucide="chevrons-down"></i></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCENE 2: SLOGAN (word reveal — starts early, centered text block) -->
+        <section id="slogan-scene">
+            <div class="slogan-sticky">
+                <div class="slogan-content">
+                    <h2 class="reveal-text" id="slogan-main">
+                        <span class="rw">Transformamos</span>
+                        <span class="rw">ideas</span>
+                        <span class="rw">complejas</span>
+                        <span class="rw">en</span>
+                        <span class="rw accent">software</span>
+                        <span class="rw accent">a</span>
+                        <span class="rw accent">la</span>
+                        <span class="rw accent">medida.</span>
+                    </h2>
+                    <p class="reveal-sub" id="slogan-sub">We make your digital projects a reality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PURPOSE (no cards — clean flowing text with reveal) -->
+        <section id="purpose-section">
+            <div class="section-inner">
+                <div class="text-center-block">
+                    <p class="label-tag reveal-up">Nuestro Propósito</p>
+                    <h2 class="reveal-text section-heading">
+                        <span class="rw">Creamos</span>
+                        <span class="rw">tecnología</span>
+                        <span class="rw">que</span>
+                        <span class="rw accent">impulsa</span>
+                        <span class="rw accent">el</span>
+                        <span class="rw accent">crecimiento</span>
+                        <span class="rw">de</span>
+                        <span class="rw">tu</span>
+                        <span class="rw">marca.</span>
+                    </h2>
+                    <p class="body-text reveal-up">Erradicamos procesos manuales y hojas de cálculo propensas a errores para dar paso a plataformas intuitivas y visualmente excepcionales que optimizan tu negocio.</p>
+                </div>
+
+                <div class="two-col">
+                    <div class="col reveal-up">
+                        <div class="icon-wrap"><i data-lucide="rocket"></i></div>
+                        <h3>Startups</h3>
+                        <p>MVPs rápidos, interfaces de nivel mundial y arquitectura escalable lista para crecer o levantar inversión.</p>
+                    </div>
+                    <div class="col reveal-up">
+                        <div class="icon-wrap"><i data-lucide="building-2"></i></div>
+                        <h3>Negocios Consolidados</h3>
+                        <p>Digitalización de procesos operativos, control de flujos y sistemas internos adaptados a tus reglas de negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SHOWCASE — Image gallery with crossfade + 3D tilt -->
+        <section id="showcase-section">
+            <div class="section-inner">
+                <div class="text-center-block">
+                    <p class="label-tag reveal-up">Digital Showroom</p>
+                    <h2 class="reveal-text section-heading">
+                        <span class="rw">Sistemas</span>
+                        <span class="rw">que</span>
+                        <span class="rw accent">fluyen.</span>
+                        <span class="rw">Sin</span>
+                        <span class="rw">costuras.</span>
+                    </h2>
+                    <p class="body-text reveal-up">Un vistazo a las plataformas que diseñamos y desarrollamos.</p>
+                </div>
+
+                <!-- Showcase Gallery -->
+                <div id="showcase-gallery">
+                    <div class="gallery-nav">
+                        <button class="gallery-btn active" data-idx="0">CRM & Pipelines</button>
+                        <button class="gallery-btn" data-idx="1">E-Commerce</button>
+                        <button class="gallery-btn" data-idx="2">Analytics</button>
+                        <button class="gallery-btn" data-idx="3">Responsive Design</button>
+                    </div>
+                    <div class="gallery-viewport">
+                        <div class="gallery-track">
+                            <div class="gallery-slide active">
+                                <img src="showroom_crm.png" alt="CRM Dashboard">
+                                <div class="slide-caption">
+                                    <h4>CRM & Pipeline de Ventas</h4>
+                                    <p>Control total de prospectos, embudos de conversión y rendimiento comercial en tiempo real.</p>
+                                </div>
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="showroom_ecommerce.png" alt="E-Commerce Platform">
+                                <div class="slide-caption">
+                                    <h4>Tienda Virtual E-Commerce</h4>
+                                    <p>Catálogos interactivos, carritos de compra y flujos de checkout profesionales.</p>
+                                </div>
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="showroom_analytics.png" alt="Analytics Dashboard">
+                                <div class="slide-caption">
+                                    <h4>Dashboards de Analítica</h4>
+                                    <p>Visualización de métricas clave, gráficas en tiempo real y reportes automatizados.</p>
+                                </div>
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="showroom_mobile.png" alt="Responsive Web Design">
+                                <div class="slide-caption">
+                                    <h4>Diseño Web Responsivo</h4>
+                                    <p>Interfaces optimizadas para cualquier dispositivo: escritorio, tablet y móvil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: PACKAGES (clean, no card borders) -->
+        <section id="packages-section">
+            <div class="section-inner">
+                <div class="text-center-block">
+                    <p class="label-tag reveal-up">Nuestros Paquetes</p>
+                    <h2 class="reveal-text section-heading">
+                        <span class="rw">Sencillo</span>
+                        <span class="rw">y</span>
+                        <span class="rw accent">transparente.</span>
+                        <span class="rw">Cotizado</span>
+                        <span class="rw">por</span>
+                        <span class="rw">alcance.</span>
+                    </h2>
+                    <p class="body-text reveal-up">Dos esquemas sólidos diseñados para dar continuidad a tu plataforma.</p>
+                </div>
+
+                <div class="packages-row">
+                    <div class="pkg reveal-up" id="pkg-core">
+                        <h3>DDS Core</h3>
+                        <p class="pkg-sub">Desarrollo + Mantenimiento Anual</p>
+                        <ul>
+                            <li><i data-lucide="check"></i> <strong>Desarrollo de software a la medida:</strong> Programación estructurada y adaptada a tus necesidades comerciales.</li>
+                            <li><i data-lucide="check"></i> <strong>Diseño de interfaz a la medida:</strong> Diseño visual único y profesional alineado con la identidad de tu marca.</li>
+                            <li><i data-lucide="check"></i> <strong>Páginas informativas y promocionales:</strong> Ideal para mostrar tus productos, servicios y captar la atención de tus clientes.</li>
+                            <li><i data-lucide="check"></i> <strong>Mantenimiento anual incluido:</strong> Actualizaciones de datos, textos e imágenes de forma sencilla.</li>
+                            <li><i data-lucide="check"></i> <strong>Monitoreo y soporte técnico:</strong> Vigilancia constante para asegurar que tu sitio web esté siempre en línea.</li>
+                        </ul>
+                        <span class="pkg-price">Cotización personalizada según alcance</span>
+                        <a href="#contact-section" class="pkg-link">Cotizar Core</a>
+                    </div>
+                    <div class="pkg featured reveal-up" id="pkg-premium">
+                        <span class="rec-badge">Recomendado</span>
+                        <h3>DDS Premium</h3>
+                        <p class="pkg-sub">Desarrollo + Mantenimiento Anual + Dominio</p>
+                        <ul>
+                            <li><i data-lucide="check"></i> <strong>Todo lo incluido en el plan Core:</strong> Conservas todas las bases sólidas de desarrollo y soporte técnico básico.</li>
+                            <li><i data-lucide="check"></i> <strong>Diseño avanzado e interactivo:</strong> Animaciones dinámicas y transiciones premium que mejoran la experiencia de navegación.</li>
+                            <li><i data-lucide="check"></i> <strong>Panel de administración y control:</strong> Plataforma privada para gestionar usuarios, información y contenidos de manera autónoma.</li>
+                            <li><i data-lucide="check"></i> <strong>Seguimiento con métricas y KPIs:</strong> Visualización de estadísticas y gráficos para medir el éxito de tu negocio en tiempo real.</li>
+                            <li><i data-lucide="check"></i> <strong>Registro de dominio propio (.com / .mx):</strong> Compra y renovación anual de tu dirección en internet gestionada por nosotros.</li>
+                            <li><i data-lucide="check"></i> <strong>Mantenimiento y soporte prioritario:</strong> Atención preferencial para cualquier ajuste o actualización urgente en el sistema.</li>
+                            <li><i data-lucide="check"></i> <strong>Administración técnica del servidor:</strong> Nos encargamos de optimizar y configurar el espacio en donde se aloja tu plataforma.</li>
+                            <li><i data-lucide="check"></i> <strong>Despliegue y entrega llave en mano:</strong> Tu sistema completamente configurado y listo para recibir clientes desde el primer día.</li>
+                        </ul>
+                        <span class="pkg-price">Cotización personalizada según alcance</span>
+                        <a href="#contact-section" class="pkg-link primary">Cotizar Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: CONTACT -->
+        <section id="contact-section">
+            <div class="contact-wrap">
+                <div class="contact-left">
+                    <p class="label-tag">Start Today</p>
+                    <h2 class="reveal-text section-heading">
+                        <span class="rw">Hagamos</span>
+                        <span class="rw accent">realidad</span>
+                        <span class="rw">tu</span>
+                        <span class="rw">proyecto.</span>
+                    </h2>
+                    <p class="body-text reveal-up">Platícanos sobre tu visión, requerimientos y alcance. Evaluaremos la magnitud del trabajo para darte una cotización a la medida.</p>
+                    <div class="contact-details reveal-up">
+                        <div class="detail"><i data-lucide="message-square"></i> WhatsApp: +52 33 3361 1174</div>
+                        <div class="detail"><i data-lucide="map-pin"></i> Guadalajara, Jalisco, México</div>
+                    </div>
+                </div>
+                <div class="contact-right reveal-up">
+                    <form id="dds-contact-form">
+                        <div class="fg">
+                            <label for="name">Tu Nombre</label>
+                            <input type="text" id="name" required placeholder="Nombre completo">
+                        </div>
+                        <div class="fg">
+                            <label for="package">Paquete de Interés</label>
+                            <select id="package">
+                                <option value="DDS Core">DDS Core (sin dominio)</option>
+                                <option value="DDS Premium">DDS Premium (con dominio)</option>
+                                <option value="Software a la medida / Especial">Otro / Software específico</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label for="message">Desarrollo del proyecto</label>
+                            <textarea id="message" rows="4" required placeholder="Describe las funcionalidades, objetivos y alcance de tu proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje a WhatsApp <i data-lucide="arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <footer class="site-footer">
+                <img src="logo_transparent.png" alt="DDS" class="footer-logo">
+                <p>&copy; 2026 Dávalos Digital Studio. Todos los derechos reservados.</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
